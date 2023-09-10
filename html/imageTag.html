@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+    <style>
+      body {
+        background-color: #414141;
+        color: #ffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ninja</h1>
+    <img
+      src="https://images.unsplash.com/photo-1622643048696-883eafe4d8dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80"
+      alt="no image"
+    />
+    <h1>Ninja Bear</h1>
+    <img src="./bear.png" alt="no image" width="400" />
+    <!-- <picture>
+      <source media="(min-width: 600px)" srcset="./bear.png" />
+      <source media="(min-width: 200px)" srcset="./bear.png" />
+      <img src="./bear.png" alt="no image" width="400" />
+    </picture> -->
+
+    <!-- Image Map -->
+    <br />
+    <p>please touch face and abs</p>
+    <img src="./bear.png" usemap="#image-map" alt="no image" />
+
+    <map name="image-map">
+      <area
+        onclick="one()"
+        target=""
+        alt="no image"
+        title=""
+        href=""
+        coords="760,270,540,97"
+        shape="rect"
+      />
+      <area
+        onclick="two()"
+        target=""
+        alt="no image"
+        title=""
+        href=""
+        coords="328,282,624,565"
+        shape="rect"
+      />
+    </map>
+
+    <script>
+      function one() {
+        alert("You touch my face :-)");
+      }
+      function two() {
+        alert("you touch my abs ᕙ(•̀‸•́‶)ᕗ ");
+      }
+    </script>
+  </body>
+</html>

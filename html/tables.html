@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        color: #a34758;
+        font-family: monospace;
+        font-size: 25px;
+        text-align: center;
+      }
+      th,
+      td {
+        border: 1px solid #dd9c9c;
+        /* background-color: #588c7e; */
+        /* color: white; */
+        padding: 15px;
+      }
+      tr:nth-child(even) {
+        background-color: #476753;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Country</th>
+        <th>Country ZipCode</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>IN</td>
+        <td>india1729@gmail.com</td>
+      </tr>
+      <tr>
+        <td>United States of America</td>
+        <td>USA</td>
+        <td>usa1729@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Japan</td>
+        <td>jp</td>
+        <td>japan1729@gmail.com</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Items</th>
+          <th scope="col">Expenditure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Donuts</th>
+          <td>3,000</td>
+        </tr>
+        <tr>
+          <th scope="row">Stationery</th>
+          <td>18,000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Totals</th>
+          <td>21,000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
