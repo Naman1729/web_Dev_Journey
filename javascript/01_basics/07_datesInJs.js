@@ -25,7 +25,7 @@ console.log(myTimeStamp); // output => 1694979583090 ms from 1st Jan 1970
 
 console.log(myDate2.getTime()); // output => 1674412200000 ms from 1st Jan 1970
 
-console.log(Math.floor(Date.now()/1000)); // this will give us the current time in seconds from 1st Jan 1970
+console.log(Math.floor(Date.now() / 1000)); // this will give us the current time in seconds from 1st Jan 1970
 
 let newDate = new Date();
 console.log(newDate);
