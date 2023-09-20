@@ -5,6 +5,7 @@
 // singleton object - it is an object that can be instantiated only once . constructor function is used to create singleton object. literal notation cannot be used to create singleton object.
 
 // object literal
+
 // Object.create(null); // it creates an empty object without any prototype methods. it is used to create a singleton object. This is constructor object.
 
 const mySym1 = Symbol("mySym1");
