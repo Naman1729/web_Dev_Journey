@@ -25,6 +25,15 @@
       console.log(element.innerHTML);
     }
 
-    parent.children[1].style.color = "orange";
+    parent.children[0].style.color = "red";
+    // console.log(parent.firstElementChild.outerHTML);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector(".day");
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    console.log("NODES: ", parent.childNodes);
   </script>
 </html>
