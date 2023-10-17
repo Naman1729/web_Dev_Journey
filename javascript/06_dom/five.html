@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun with code</title>
+  </head>
+  <body style="background-color: #414141; color: #fff">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+    addLanguage("typescript");
+    function addOptimisedLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName)); // this is a better way to do it
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptimisedLanguage("Solidity");
+    addOptimisedLanguage("C#");
+
+    // Edit-1
+    const secondLang = document.querySelector(".language li:nth-child(2)");
+    // console.log(secondLang);
+    // secondLang.innerHTML = "C++"; // this is not a good way to do it
+    const newli = document.createElement("li");
+    newli.textContent = "C++"; // this is not a good way to do it
+    secondLang.replaceWith(newli);
+
+    // Edit-2
+    const firstLang = document.querySelector(".language li:first-child");
+    firstLang.outerHTML = "<li>HTML</li>"; // this is not a good way to do it
+
+    // remove
+    const lastLang = document.querySelector(".language li:last-child");
+    lastLang.remove();
+  </script>
+</html>
