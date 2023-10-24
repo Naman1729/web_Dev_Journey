@@ -16,14 +16,17 @@
       li.innerHTML = `${langName}`;
       document.querySelector(".language").appendChild(li);
     }
+    
     addLanguage("Python");
     addLanguage("Java");
     addLanguage("typescript");
+    
     function addOptimisedLanguage(langName) {
       const li = document.createElement("li");
       li.appendChild(document.createTextNode(langName)); // this is a better way to do it
       document.querySelector(".language").appendChild(li);
     }
+    
     addOptimisedLanguage("Solidity");
     addOptimisedLanguage("C#");
 
